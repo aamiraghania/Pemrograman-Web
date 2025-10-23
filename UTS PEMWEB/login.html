@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Bookverse</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <header>
+    <h2>Bookverse</h2>
+  </header>
+
+  <section class="login-container">
+    <div class="login-box">
+      <a href="home.html" class="back-btn">
+        <i class='bx bx-arrow-back'></i> Kembali
+      </a>
+
+      <h2>Login</h2>
+      <p>Selamat datang kembali! Silakan login untuk melanjutkan</p>
+
+      <form action="backend/login.php" method="POST">
+        <div class="input-group">
+          <i class='bx bx-envelope'></i>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="input-group">
+          <i class='bx bx-lock-alt'></i>
+          <input type="password" name="password" placeholder="Kata Sandi" required>
+        </div>
+
+        <button type="submit" class="login-btn">Login</button>
+
+        <div class="extra-links">
+          <a href="#">Lupa kata sandi?</a>
+          <p>Belum punya akun? <a href="register.html">Daftar Sekarang</a></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bookverse. All rights reserved.</p>
+  </footer>
+</body>
+</html>

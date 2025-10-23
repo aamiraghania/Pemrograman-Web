@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register - Bookverse</title>
+  <link rel="stylesheet" href="register.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <header>
+    <h2>Bookverse</h2>
+  </header>
+
+  <section class="register-container">
+    <div class="register-box">
+      <a href="home.html" class="back-btn">
+        <i class='bx bx-arrow-back'></i> Kembali
+      </a>
+
+      <h2>Register</h2>
+      <p>Daftar sekarang dan mulai jelajahi ribuan koleksi buku di Bookverse!</p>
+
+      <form action="backend/register.php" method="POST" id="registerForm">
+        <div class="input-group">
+          <i class='bx bx-user'></i>
+          <input type="text" name="fullname" placeholder="Nama Lengkap" required>
+        </div>
+
+        <div class="input-group">
+          <i class='bx bx-envelope'></i>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="input-group">
+          <i class='bx bx-lock-alt'></i>
+          <input type="password" name="password" placeholder="Kata Sandi" required>
+        </div>
+
+        <div class="input-group">
+          <i class='bx bx-lock'></i>
+          <input type="password" name="confirm_password" placeholder="Konfirmasi Kata Sandi" required>
+        </div>
+
+        <button type="submit" class="register-btn">Register</button>
+
+        <div class="extra-links">
+          <p>Sudah punya akun? <a href="login.html">Masuk di sini</a></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bookverse. All rights reserved.</p>
+  </footer>
+
+  <script src="register.js"></script>
+</body>
+</html>
